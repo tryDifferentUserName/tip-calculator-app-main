@@ -1,0 +1,98 @@
+@import url("https://fonts.google.com/specimen/Space+Mono");
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan2: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Space Mono", monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--light-grayish-cyan);
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.heading-logo {
+  text-transform: uppercase;
+  color: var(--dark-grayish-cyan);
+  margin: 55px 0;
+}
+.calculator {
+  background-color: var(--light-grayish-cyan2);
+  border-radius: 2rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 315px;
+  padding: 30px;
+  position: relative;
+}
+.calculator__total {
+  background-color: hsl(183, 100%, 15%);
+  width: 90vw;
+  border-radius: 5px;
+}
+button {
+  background-color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace;
+  padding: 3px 28px;
+}
+input {
+  border: none;
+  background-color: var(--light-grayish-cyan);
+  border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  width: 80vw;
+  padding: 0.8rem;
+}
+label {
+  font-size: 18px;
+  color: var(--dark-grayish-cyan);
+}
+.dollar-icon {
+  position: absolute;
+  right: 30px;
+  top: 65px;
+}
+.person-icon {
+  position: absolute;
+  right: 30px;
+  top: 370px;
+}
+.calculator__tip--btn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+}
+.calculator__custom-btn {
+  padding: 3px 28px;
+  width: auto;
+}
+.calculator__total {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+  padding: 30px 10px;
+}
